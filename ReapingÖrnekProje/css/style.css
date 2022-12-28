@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1300px;
+}
+
+
+/********************* TopBar *************/
+
+.topbar {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+}
+
+.topbar-left {
+    color: #fff;
+    float: left;
+    line-height: 80px;
+    margin-left: 150px;
+    font-size: 18px;
+}
+
+.topbar-right {
+    float: right;
+    margin-right: 150px;
+    font-size: 14px;
+    line-height: 80px;
+}
+
+.topbar-right a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 8px;
+}
+
+.topbar-right a:hover {
+    color: #ffcc00;
+}
+
+.topbar-right a:last-child {
+    padding-right: 0px;
+}
+
+
+/********************* String *************/
+
+.string {
+    width: 100%;
+    height: 5px;
+    background-color: #ffcc00;
+}
+
+
+/********************* Banner *************/
+
+.banner img {
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+}
+
+
+/********************* BottomBar *************/
+
+.bottom-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #1b1b1b;
+    padding-left: 200px;
+}
+
+.bottom-bar-left {
+    color: #cccccc;
+    float: left;
+    line-height: 80px;
+}
+
+.bottom-bar-right {
+    margin-right: 200px;
+}
+
+#button {
+    border-radius: 6px;
+    line-height: 40px;
+    margin-top: 10px;
+    float: right;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    background: #ffcc00;
+}
+
+
+/****************** Container **********************/
+
+.container {
+    width: 740px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+.about-us h1 {
+    color: #006633;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.about-us p {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #666666;
+}
+
+
+/*************** Boxes *****************/
+
+.box {
+    padding: 10px;
+    margin-top: 40px;
+    width: 33.3333%;
+    float: left;
+}
+
+.inner-box {
+    width: 100%;
+    height: 100%;
+    text-align: start;
+}
+
+.inner-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.inner-box h4 {
+    padding-top: 5px;
+    font-weight: bolder;
+    color: #333333;
+}
+
+.inner-box p {
+    color: #666666;
+}
+
+
+/********************** Lorem ********************/
+
+.lorem h2 {
+    height: 10px;
+    color: #666666;
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+
+/****************** footer **********************/
+
+.footer {
+    background-color: #2e2f34;
+    height: 190px;
+    padding-top: 15px;
+}
+
+.footer .top-line {
+    margin: 0 115px 0 115px;
+    border-top: 1px solid #666666;
+    padding: 15px;
+    background-color: #2e2f34;
+}
+
+.footer i {
+    text-align: center;
+    color: #999999;
+    margin-top: 55px;
+    font-size: 25px;
+    font-weight: 500px;
+    margin: 20px;
+}
+
+.footer .icon-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-bar {
+    text-align: center;
+}
+
+.info-bar h1 {
+    color: #999999;
+}
+
+.info-bar b {
+    color: #ffcc00;
+}
