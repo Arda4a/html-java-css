@@ -1,0 +1,409 @@
+/****************top bar*************/
+
+.topbar {
+    height: 47px;
+    width: 100%;
+    background-color: #000;
+}
+
+.topbar-left {
+    float: left;
+    margin-left: 60px
+}
+
+.topbar-left i {
+    color: gray;
+    line-height: 47px;
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+.topbar-left i:hover {
+    color: #fff;
+}
+
+.topbar-right {
+    float: right;
+}
+
+.topbar-right input {
+    background-color: #333;
+    width: 150px;
+    margin-left: 60px;
+    border: none;
+    height: 24px;
+    line-height: 47px;
+}
+
+.topbar-right>i {
+    color: rgb(177, 170, 170);
+    line-height: 47px;
+    font-size: 18px;
+    position: relative;
+    right: 30px;
+    top: 3px;
+}
+
+.topbar-right i:hover {
+    color: #fff;
+}
+
+
+/****************container*************/
+
+.container {
+    margin: 0 auto;
+    height: 1600px;
+    width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/****************navbar*************/
+
+.logo-area {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+}
+
+.logo-area h1 {
+    font-size: 64px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-list {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+.nav-list li {
+    display: inline;
+    color: #333;
+    margin-right: 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-list li a:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    background: url("./uzun-burunlu-maymun.jpg") no-repeat;
+    background-size: contain;
+    height: 400px;
+    margin: 0 200px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.image {
+    color: #fff;
+}
+
+.services p {
+    text-align: center;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.services h1 {
+    margin-top: 35px;
+}
+
+.boxes {
+    margin-top: 20px;
+}
+
+.bg-AkilliGuvenlik {
+    float: left;
+    width: 400px;
+    margin: 20px;
+    padding: auto;
+}
+
+.bg-AkilliGuvenlik p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.bg-SinirsizDestek {
+    float: right;
+    width: 400px;
+    margin: 20px;
+    padding: auto;
+}
+
+.bg-SinirsizDestek p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.boxes2 {
+    margin-top: 20px;
+    float: left;
+}
+
+.bg-TeknikServis {
+    float: left;
+    width: 400px;
+    margin: 20px;
+    padding: auto;
+}
+
+.bg-TeknikServis p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.bg-Etkinlikler {
+    float: right;
+    width: 400px;
+    margin: 20px 0px 20px 140px;
+    padding: auto;
+}
+
+.bg-Etkinlikler p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.services .boxes img {
+    width: 50px;
+    height: 50px;
+}
+
+.services .boxes2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.customer-reviews {
+    float: left;
+    margin-top: 40px;
+}
+
+.customer-reviews h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.customer-reviews p {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.kutular {
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.bg-GizemKara {
+    float: left;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px #000 solid;
+    margin-left: 30px;
+}
+
+.bg-AyşeKaya {
+    float: left;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 30px;
+    border: 1px #000 solid;
+}
+
+.bg-AliyeVeli {
+    margin-left: 30px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px #000 solid;
+}
+
+.h {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.customer-reviews .kutular img {
+    height: 70px;
+    width: 80px;
+    border-radius: 30px;
+}
+
+.customer-reviews {
+    text-align: center;
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+}
+
+.kapsul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.boxsf {
+    margin: 0 100px;
+}
+
+.box-f {
+    width: 24%;
+    height: 300px;
+    /* background-color: #222; */
+    float: left;
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    color: white;
+    padding: 20px;
+}
+
+.box-f:last-child {
+    margin-right: 0;
+}
+
+.box-f h2 {
+    border-bottom: 3px dashed white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.napiim :last-child {
+    margin-right: 0;
+}
+
+.napiim li {
+    margin-right: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.napiim li a,
+.napiim li a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #81807e;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.napiim li a:hover {
+    color: firebrick;
+}
+
+.box-f:last-child {
+    margin-right: 0;
+}
+
+.box-f h2 {
+    border-bottom: 3px dashed white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.napiim1 :last-child {
+    margin-right: 0;
+}
+
+.napiim1 li {
+    margin-right: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.napiim1 li a,
+.napiim1 li a:visited {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: #81807e;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.napiim1 li a:hover {
+    color: firebrick;
+}
+
+.box-f:last-child {
+    margin-right: 0;
+}
+
+.box-f h2 {
+    border-bottom: 3px dashed white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.napiim2 :last-child {
+    margin-right: 0;
+}
+
+.napiim2 li {
+    margin-right: 15px;
+    /* border-bottom: 1px solid #333; */
+}
+
+.napiim2 li a,
+.napiim2 li a:visited {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: #81807e;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.napiim2 li a:hover {
+    color: firebrick;
+}
+
+.box-f:last-child {
+    margin-right: 0;
+}
+
+.box-f h2 {
+    border-bottom: 3px dashed white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.napiim3 :last-child {
+    margin-right: 0;
+}
+
+.napiim3 li {
+    margin-right: 15px;
+    /* border-bottom: 1px solid #333; */
+}
+
+.napiim3 li a,
+.napiim3 li a:visited {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    color: #81807e;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.napiim3 li a:hover {
+    color: firebrick;
+}
