@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #212429;
+}
+
+.container .bar {
+    background-color: #212429;
+}
+
+.slide img {
+    height: 375px;
+}
+
+.textbar {
+    background-color: #8ac5ff;
+    padding: 20px;
+}
+
+.line hr {
+    height: 1px;
+    border: 0px;
+    background-color: gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infobar img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.infobar {
+    margin-left: 50px;
+}
