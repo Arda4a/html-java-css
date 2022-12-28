@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button id="minus" onclick="decrease()">-</button>
+    <span id="counterText">0</span>
+    <button id="plus" onclick="increase()">+</button>
+
+    <script>
+        var counterText = document.getElementById("counterText");
+        var value;
+
+
+        function decrease() {
+            value = parseInt(counterText.innerText);
+            counterText.innerText = value - 1
+            if (counterText.innerText < 0) {
+                counterText.style.color = "red";
+
+            }
+
+
+
+        }
+
+        function increase() {
+            value = parseInt(counterText.innerText);
+
+            if (counterText.innerText >= 10) {
+
+                alert("Üst sınıra ulaştınız")
+
+            } else {
+                counterText.innerText = value + 1;
+            }
+            if (counterText.innerText >= 0) {
+                counterText.style.color = "green";
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>
