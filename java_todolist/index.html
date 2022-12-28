@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <hr>
+        <div class="add">
+            <input type="text" id="txtTodoItems">
+            <input type="button" id="txtTodoItem" onclick="addItem()" value="Ekle" style="background-color: rgb(106, 212, 106);">
+        </div>
+
+
+
+        <div class="items-holder" id="item-list">
+            <!-- <div class="item">
+                <i class="fa-regular fa-circle-check "></i>
+                <span>Spor Yap</span>
+                <i class="fa-regular fa-circle-xmark red-text"></i>
+            </div>
+            <div class="item">
+                <i class="fa-regular fa-circle"></i>
+                <span>Spor Yap</span>
+                <i class="fa-regular fa-circle-xmark red-text"></i>
+            </div> -->
+
+
+        </div>
+
+
+
+    </div>
+    <script>
+        let txtTodoItems = []
+        var todoItemsText;
+
+        function addItem() {
+            var todoItemsText = document.getElementById("txtTodoItem").value;
+            const todo = {
+                text: todoItemsText,
+                checked: false,
+                id: Date.now()
+
+            }
+            todoItems.push(todo)
+            console.log(todoItems);
+            renderItem(todo)
+        }
+
+        function renderItem(todo) {
+            const list = document.getElementById("item-list");
+            const isChecked = todo.checked ? 'done' : '';
+
+            const isExist = document.querySelector("[data-key]" )
+
+            const itemNode = document.createElement("div");
+            itemNode.setAttribute(`class`, `item ${isChecked}`);
+            itemNode.setAttribute(`data-key`, todo.id);
+
+            const iconClass = todo.checked ? 'fa-solid fa-circle' : 'fa-regular fa-circle-check'
+
+            itemNode.innerHTML =
+                ` <i class="fa-regular fa-circle"></i>
+                <span> ${todo.text} </span>
+                <i class="fa-regular fa-circle-xmark red-text"></i>`;
+
+            list.append(itemNode);
+
+            const listItem = document.querySelector(`[data-key='${todo.id}']`)
+            const itemCheck = listItem.querySelector('.check-item');
+            itemCheck.addEventListener('click', event => {
+                const parentNode = event.target.parentElement;
+                if (parentNode.classList.contains('done')) {
+                    const itemKey = parentNode.dataset.key;
+                    toggleDone(itemKey)
+                }
+
+
+
+
+            })
+
+
+        }
+    </script>
+
+</body>
+
+</html>
