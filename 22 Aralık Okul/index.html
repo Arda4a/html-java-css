@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Projem</title>
+</head>
+
+<body>
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-center mb-5 ">
+            <div class="container-fluid ">
+                <img src="./favicon.ico" alt="">
+                <a class="navbar-brand ms-2 " href="#"> Lasles <b>VPN</b> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a style="color: grey;" class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: grey;" class="nav-link" href="#">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a style="color: grey;" class="nav-link ">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: grey;" class="nav-link ">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color: grey;" class="nav-link ">Help</a>
+                        </li>
+                    </ul>
+                    <a class="me-4" href="#">Sign İn</a>
+                    <button style="background-color: white;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign Up</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Kullanıcı Girişi</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div style="border-color: red;" class="modal-body">
+                                    <form>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom01" class="form-label">Adınız</label>
+                                                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom02" class="form-label">Soyadınız</label>
+                                                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustomUsername" class="form-label">E-Mail Adresiniz</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom03" class="form-label">Şehir</label>
+                                                <input type="text" class="form-control" id="validationCustom03" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid city.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationCustom04" class="form-label">Meslek</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                              <option selected disabled value="">Seçiniz...</option>
+                              <option>...</option>
+                            </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                    <label style="border-color: red;" class="form-check-label" for="invalidCheck">
+                                Şartları ve koşulları kabul edin.
+                              </label>
+                                                    <div class="invalid-feedback">
+                                                        You must agree before submitting.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Çıkış</button>
+                                    <button type="button" class="btn btn-light">Giriş Yap</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+        <div class="textbar mb-5">
+            <div class="row">
+                <div class="col ms-3  ">
+                    <h1>Want anything to be easy with <b>LaslesVPN</b> </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem ipsum dolar sit amet</p>
+                    <button class="btn btn-outline-success background-color-red  " type="submit">Get Started</button>
+                </div>
+                <div class="col">
+                    <img src="./1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="iconbar mb-5 p-3">
+            <div class="container ms-4 mt-4">
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-3"><img src="./user-icon.png" alt="">
+                        <h1>90+</h1>
+                        <p>User</p>
+                    </div>
+                    <div class="col-3"><img src="./location-icon.png" alt="">
+                        <h1>30+</h1>
+                        <p>Locations</p>
+                    </div>
+                    <div class="col-3"><img src="./server-icon.png" alt="">
+                        <h1>50+</h1>
+                        <p>Servers</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="correctbar">
+            <div class="row">
+                <div class="col"><img src="./2.png" alt=""></div>
+                <div class="col ">
+                    <h1>We Provide Many Features You Can Use </h1>
+                    <p> You can explore the features that we provide with fun and have their own fuctions each feature. </p>
+                    <ul style="list-style-type: none; ">
+                        <li>
+                            <i style="color: rgb(39, 210, 39);" class="fa-solid fa-circle-check"> </i> Powerfull online protection <br><br>
+                        </li>
+                        <li><i style="color: rgb(39, 210, 39);" class="fa-solid fa-circle-check"> </i> Powerfull online protection <br><br>
+                            <li><i style="color: rgb(39, 210, 39);" class="fa-solid fa-circle-check"> </i> Powerfull online protection <br><br>
+                                <li><i style="color: rgb(39, 210, 39)" class="fa-solid fa-circle-check"> </i> Powerfull online protection
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="text text-center mt-4 mb-4 ">
+            <h1>Choose Your Plan</h1>
+            <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+
+            <div class="cards row d-flex justify-content-center text-center mx-5">
+                <div class="card m-2" style="width: 20rem;">
+                    <img src="./images/Ekran_Alıntısı-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Free Plan</h5>
+                        <ul style="list-style: none;">
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+
+                            <h1 class="mx-5 mt-4">Free</h1>
+                            <button type="button" class="btn btn-outline-danger rounded-5 px-4 mx-4">
+                  Register</button>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 20rem;">
+                    <img src="./images/Ekran_Alıntısı-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Stndart Alan</h5>
+                        <ul style="list-style: none;">
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <h1 class="mx-5 mt-4"> $9/mo</h1>
+                            <button type="button" class="btn btn-outline-danger rounded-5 px-4 mx-5">
+                     Register</button>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="card m-2 " style="width: 20rem;">
+                    <img src="./images/Ekran_Alıntısı-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Premium Plan</h5>
+                        <ul style="list-style: none;">
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <li><i class="  fa-solid fa-check text-success    mt-3"></i>Lorem ipsum dolor sit amet </li>
+                            <h1 class="mx-5 mt-4 row">$12/mo</h1>
+                            <button type="button" class="btn btn-outline-danger rounded-5 px-4  mx-5 text-center">
+                     Register</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contents-two">
+                <h1 class="text-center d-flex justify-content-center mt-5">
+                    Huge Global Network
+                </h1>
+                <h1 class="text-center d-flex justify-content-center ">
+                    of Fast vpn
+                </h1>
+                <p class="text-center  d-flex justify-content-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed corrupti perferendis.Sit sed corrupti perferendis.
+                </p>
+                <img class="col-12" src="./images/sea.PNG" alt="">
+                <h1 class="text-center d-flex justify-content-center mt-5">
+                    Huge Global Network
+                </h1>
+                <h1 class="text-center d-flex justify-content-center ">
+                    of Fast vpn
+                </h1>
+                <p class="text-center  d-flex justify-content-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed corrupti perferendis.Sit sed corrupti perferendis.
+                </p>
+            </div>
+        </div>
+
+</body>
+
+</html>
